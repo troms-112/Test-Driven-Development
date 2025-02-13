@@ -6,5 +6,5 @@ def check_pwd(pwd: str) -> bool:
         if char.islower():
             lower_case = True
         elif char.isupper():
-            upper_case = False
+            upper_case = True
     return lower_case and upper_case
