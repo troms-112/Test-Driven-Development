@@ -45,6 +45,14 @@ class TestCase(unittest.TestCase):
         """
         self.assertFalse(check_pwd("a3a3a3a3a3"))
 
+    def test6(self):
+        """
+        test checks if password contains at least one digit
+
+        :return: False
+        """
+        self.assertFalse(check_pwd("aAaAaDDF"))
+
 
 if __name__ == "__main__":
     unittest.main()
