@@ -36,6 +36,15 @@ class TestCase(unittest.TestCase):
         """
         self.assertFalse(check_pwd("A2AA2A2A"))
 
+    def test5(self):
+        """
+        test checks if password contain at least one upper case letter
+        (standard English alphabet)
+
+        :return: False
+        """
+        self.assertFalse(check_pwd("a3a3a3a3a3"))
+
 
 if __name__ == "__main__":
     unittest.main()
