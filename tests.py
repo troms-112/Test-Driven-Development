@@ -19,5 +19,13 @@ class TestCase(unittest.TestCase):
         """
         self.assertFalse(check_pwd("A2sghj+"))
 
+    def test3(self):
+        """
+        test checks if passwords greater than 20 character are rejected
+
+        :return: False
+        """
+        self.assertFalse(check_pwd("a2Aaaaaaaaaaaaaa+aaaaaa!22"))
+
 if __name__ == "__main__":
     unittest.main()
