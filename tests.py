@@ -27,5 +27,15 @@ class TestCase(unittest.TestCase):
         """
         self.assertFalse(check_pwd("a2Aaaaaaaaaaaaaa+aaaaaa!22"))
 
+    def test4(self):
+        """
+        test checks if passwords contain at least one lower case letter
+        (standard English alphabet)
+
+        :return: False
+        """
+        self.assertFalse(check_pwd("A2AA2A2A"))
+
+
 if __name__ == "__main__":
     unittest.main()
