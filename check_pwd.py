@@ -1,7 +1,8 @@
+SYMBOLS = set("~`!@#$%^&*()_+-=")
 def check_pwd(pwd: str) -> bool:
     if not (8 <= len(pwd) <= 20):
         return False
-    lower_case = upper_case = digit = False
+    lower_case = upper_case = digit = symbol = False
     for char in pwd:
         if char.islower():
             lower_case = True
@@ -9,4 +10,6 @@ def check_pwd(pwd: str) -> bool:
             upper_case = True
         elif char.isdigit():
             digit = True
-    return lower_case and upper_case and digit
+        elif char in SYMBOLS:
+            symbol = True
+    return lower_case and upper_case and digit and symbol
