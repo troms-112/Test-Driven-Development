@@ -53,6 +53,15 @@ class TestCase(unittest.TestCase):
         """
         self.assertFalse(check_pwd("aAaAaDDF"))
 
+    def test7(self):
+        """
+        test checks if password contains at least one of the following symbols
+        ~`!@#$%^&*()_+-=
+
+        :return: False
+        """
+        self.assertFalse(check_pwd("a2FF3gdsa"))
+
 
 if __name__ == "__main__":
     unittest.main()
