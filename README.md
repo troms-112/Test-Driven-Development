@@ -1,4 +1,4 @@
-# A2: TDD Hands-On (CS 362 Assignment 2)
+# Test Driven Development 
 
 This repository contains an exercise in Test-Driven Development (TDD) for implementing a password-validation function, **`check_pwd`**, according to the following specification:
 
